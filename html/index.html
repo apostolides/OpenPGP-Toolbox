@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OpenPGP Toolbox</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/openpgp.min.js"></script>
+    <script src="../js/openpgp_wrapper.js" defer></script>
+  </head>
+  <body>
+      <table id="content-table">
+      <tr>
+        <td>Your Private Key:</td>
+        <td>Recipient's Public Key:</td>
+        <td>Encrypted Message:</td>
+      </tr>
+      <tr>
+        <td>
+          <textarea id="private-key-area"></textarea>
+        </td>
+        <td>
+          <textarea id="recipient-public-key-area"></textarea>
+        </td>
+        <td>
+          <textarea id="recipient-encrypted-message"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Your Public Key:</td>
+        <td>Recipient's Message:</td>
+        <td>Decrypted Message:</td>
+      </tr>
+      <tr>
+        <td>
+          <textarea id="public-key-area"></textarea>
+        </td>
+        <td>
+          <textarea id="recipient-message-field"></textarea>
+        </td>
+        <td>
+          <textarea id="decrypted-message-field"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+                <td>
+                  User ID:
+                </td>
+                <td>
+                  <input id="user-id-field">
+                </td>
+            </tr>
+            <tr>
+              <td>
+                Passphrase:
+              </td>
+              <td>
+                <input id="password-field" type="password">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="generate-btn">Generate Keys</button>
+              </td>
+              <td>
+                <button id="encrypt-btn">Encrypt Message</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="decrypt-btn">Decrypt Message</button>
+        </td>
+      </tr>
+      </table>
+  </body>
+</html>

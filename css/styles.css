@@ -1,0 +1,5 @@
+#private-key-area,#public-key-area,#recipient-public-key-area,#recipient-message-field,#recipient-encrypted-message,#decrypted-message-field{
+  width: 445px;
+  height: 275px;
+  resize: none;
+}
