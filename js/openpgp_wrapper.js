@@ -61,10 +61,8 @@ async ()=>{
   private_key_armored = keys.privateKeyArmored;
   public_key_armored = keys.publicKeyArmored;
   const private_key_area = $("#private-key-area");
-  private_key_area.val("");
   private_key_area.val(private_key_armored);
   const public_key_area = $("#public-key-area");
-  public_key_area.val("");
   public_key_area.val(public_key_armored);
 });
 
